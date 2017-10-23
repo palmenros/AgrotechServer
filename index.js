@@ -3,10 +3,21 @@ const io = require('socket.io')(app);
 
 app.listen(3000);
 
-io.on('connection', socket => {
+const mailer = require('./Mailer');
 
-	socket.emit('message', {
-		data: 'Hola mundo'
-	});
-
-});
+mailer.sendTemplateMail({
+    template: 'waste',
+    data: {
+        'name' : 'Pedro',
+        'email' : 'test@example.com'
+    },
+    to: '',
+    from: 'no-reply@agrotech.com',
+    subject: 'Purines'
+})
+    .then(response => {
+        console.log(response);
+    })
+    .catch(err => {
+        console.log(err);
+    });

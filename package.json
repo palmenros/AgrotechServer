@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/palmenros/AgrotechServer#readme",
   "dependencies": {
+    "nodemailer": "^4.3.0",
     "socket.io": "^2.0.4"
   }
 }

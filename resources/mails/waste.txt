@@ -1,0 +1,14 @@
+Un contenedor de purines está lleno:
+Uno de sus asociados ha solicitado la eliminación de sus purines. Se adjuntan sus datos.
+
+Nombre: $NAME$
+Email: $EMAIL$
+Ciudad: $CITY$
+Provincia: $PROVINCE$
+Codigo Postal: $POSTALCODE$
+
+Pulse para ver la dirección (https://www.google.es/maps/place/$MAPQUERY$)
+
+Mensaje del consumidor:
+
+$CUSTOMTEXT$

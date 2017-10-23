@@ -1,0 +1,22 @@
+{
+  "name": "agrotechserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palmenros/AgrotechServer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/palmenros/AgrotechServer/issues"
+  },
+  "homepage": "https://github.com/palmenros/AgrotechServer#readme",
+  "dependencies": {
+    "socket.io": "^2.0.4"
+  }
+}

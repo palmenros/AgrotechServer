@@ -10,9 +10,6 @@ Codigo Postal: $POSTALCODE$
 Pulse para ver la dirección (https://www.google.es/maps/place/$MAPQUERY$)
 
 @if($CUSTOMTEXT$)
-
 Mensaje del consumidor:
-
 $CUSTOMTEXT$
-
 @endif

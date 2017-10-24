@@ -1,23 +1,19 @@
-const app = require('http').createServer();
-const io = require('socket.io')(app);
-
-app.listen(3000);
-
 const mailer = require('./Mailer');
 
 mailer.sendTemplateMail({
     template: 'waste',
     data: {
-        'name' : 'Pedro',
-        'email' : 'test@example.com'
+        'name' : 'OAuth2 funciona!!',
+        'email' : 'test@example.com',
+        'mapQuery' : 'IES Los Olmos'
     },
-    to: '',
+    to: 'palmenros@gmail.com',
     from: 'no-reply@agrotech.com',
     subject: 'Purines'
 })
     .then(response => {
-        console.log(response);
+        console.log('Mail sent');
     })
     .catch(err => {
-        console.log(err);
+        console.log('An error happened:', err);
     });

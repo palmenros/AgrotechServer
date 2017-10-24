@@ -4,15 +4,22 @@ const config = require('./config');
 
 const templateBasePath = __dirname + '/resources/mails/';
 
+//Parse if
+//@if\((.*)\)((.|\n)*)@endif
+
 class Mailer {
 
     constructor() {
         this.transport = nodemailer.createTransport({
-            service: 'gmail',
             host: 'smtp.gmail.com',
+            port: 465,
+            secure: true,
             auth: {
-                user: config.email,
-                pass: config.password
+                type: 'OAuth2',
+                user: config.user,
+                clientId: config.clientId,
+                clientSecret: config.clientSecret,
+                refreshToken: config.refreshToken                
             }
         });
     }

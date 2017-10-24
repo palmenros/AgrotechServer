@@ -1,5 +1,7 @@
 module.exports = {
-    //SMTP Auth configuration
-    email: '',
-    password: ''
+    //OAUTH2 configuration
+    user: 'noreplyagrotech@gmail.com',
+    refreshToken: '',
+    clientId: '',
+    clientSecret: ''
 };

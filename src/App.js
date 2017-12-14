@@ -2,11 +2,11 @@ class App {
     run() {
         const mailer = require('./Mailer');
         mailer.sendTemplateMail({
-            template: 'alert',
+            template: 'waste',
             data: {
                 alertContent: 'Su granja está en fuego'
             },
-            to: '',
+            to: 'palmenros@gmail.com',
             from: 'no-reply@agrotech.com',
             subject: 'Purines'
         })

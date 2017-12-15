@@ -81,7 +81,7 @@ class App {
                             data: temp
                         }
                     });
-                } else if(sensor == 8 && number != 0) {
+                } else if(sensor == 5 && number != 0) {
                     //The farm is on fire
                     mailer.sendTemplateMail({
                         template: 'alert',
@@ -99,7 +99,7 @@ class App {
                             console.log('An error happened:', err);
                         });
 
-                } else if (sensor == 5 && number != 0) {
+                } else if (sensor == 6 && number != 0) {
                     //Intruder detected
                     mailer.sendTemplateMail({
                         template: 'alert',
